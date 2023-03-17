@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(image.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+    a{
+    color:black !important;
+    text-decoration: none;
+}   
+
+h1{
+    color: #fff !important;
+    margin-top: 200px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #dfe6e9; */
+}
+
+.calendar{
+    margin: auto;
+    width: 600px;
+    box-shadow: 6px 6px 4px rgb(81, 74, 73);
+    background-color: #fff;
+    box-shadow: 0x 0px 15px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;;
+    /* background: linear-gradient(45deg,#6ac1c5,#bda5ff); */
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    color: #fff;
+    padding: 40px 30px;
+}
+
+.weekdays{
+    display: flex;
+    padding: 7px 0px;
+    background-color: #241414;
+    color: #fff;
+}
+
+.weekdays div{
+    width: 14.28%;
+    text-align: center;
+
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;   
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+.days div{
+    width: 14.28%;    
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    transition: all 0.4s;
+}
+
+.days div:hover{
+    background-color:#dfe6e9;
+    cursor: pointer;
+}
+
+.today_date{
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.prev_date{
+    color: #999;
+
+}
+
+#month{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.prev, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    font-size: 23px;
+    transition: all 0.4s;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#button1{
+    margin: -60px 740px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background: linear-gradient(45deg,#6ac1c5,#bda5ff);
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+    margin: -90px 665px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
